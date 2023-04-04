@@ -3,26 +3,22 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { NavbarComponent } from './components/shared/navbar/navbar.component';
-import { CharacterComponent } from './components/characters-list/character/character.component';
-import { CharactersListComponent } from './components/characters-list/characters-list.component';
 import { AppRoutingModule } from './app-routing.module';
-import { FlexLayoutModule } from '@angular/flex-layout';
 import { HttpClientModule } from '@angular/common/http';
+import { NavbarComponent } from './shared/navbar/navbar.component';
+import { CharacterModule } from './components/character/character.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent,
-    CharacterComponent,
-    CharactersListComponent
+    NavbarComponent    
   ],
   imports: [
     BrowserModule,
     NgbModule,
     AppRoutingModule,
     HttpClientModule,
-    FlexLayoutModule
+    CharacterModule
   ],
   providers: [],
   bootstrap: [AppComponent]

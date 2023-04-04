@@ -3,11 +3,11 @@ import { Observable } from 'rxjs';
 import { CharactersApiService } from 'src/app/services/characters-api.service';
 
 @Component({
-  selector: 'app-characters-list',
-  templateUrl: './characters-list.component.html',
-  styleUrls: ['./characters-list.component.css']
+  selector: 'app-character-list',
+  templateUrl: './character-list.component.html',
+  styleUrls: ['./character-list.component.css']
 })
-export class CharactersListComponent {
+export class CharacterListComponent {
 
   constructor(private characterSvc: CharactersApiService) { }
   allCharacters: Observable<any>;
